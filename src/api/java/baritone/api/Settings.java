@@ -113,6 +113,12 @@ public final class Settings {
     public final Setting<Boolean> allowWaterBucketFall = new Setting<>(true);
 
     /**
+     * Enable smooth aim while mining/building. Aim is updated per tick (20 = 1 second)
+     * set to 1 to disable.
+     */
+    public final Setting<Float> smoothAim = new Setting<>(1f);
+    
+    /**
      * Allow Baritone to assume it can walk on still water just like any other block.
      * This functionality is assumed to be provided by a separate library that might have imported Baritone.
      */
